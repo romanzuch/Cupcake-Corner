@@ -20,6 +20,8 @@
 		30EE935625C70D880010BBF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30EE935925C70D880010BBF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30EE935B25C70D880010BBF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30EE936225C70E1B0010BBF9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		30EE936325C70E4D0010BBF9 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,8 @@
 		30EE934625C70D870010BBF9 = {
 			isa = PBXGroup;
 			children = (
+				30EE936325C70E4D0010BBF9 /* .gitignore */,
+				30EE936225C70E1B0010BBF9 /* README.md */,
 				30EE935125C70D870010BBF9 /* Cupcake Corner */,
 				30EE935025C70D870010BBF9 /* Products */,
 			);
