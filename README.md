@@ -71,3 +71,64 @@ class User: ObservableObject, Codable {
     }
 }
 ```
+
+## Sending and receiving `Codable` data with `URLSession` and SwiftUI
+
+- iOS gives built-in tools for sending and receiving data from the internet &rarr; combined with `Codable` this gives the power to convert Swift objects to JSON for sending, and receiving JSON to be converted to Swift objects
+```Swift
+struct Response: Codable {
+    var results: [Result]
+}
+
+struct Result: Codable {
+    var trackId: Int
+    var trackName: String
+    var collectionName: String
+}
+```
+- with the above we can write a simple `ContentView` that shows an array of results &rarr; that won't work right now
+```Swift
+struct ContentView: View {
+    @State private var results = [Result]()
+    
+    var body: some View {
+        List(results, id: \.trackId) { item in
+            VStack(alignment: .leading) {
+                Text(item.trackName)
+                    .font(.headline)
+                Text(item.collectionName)
+            }
+        }
+    }
+}
+```
+- now we need to ask the iTunes API to send us a list of all songs of a particular artist, then use the `JSONDecoder` to convert it into an array of `Result` instances
+- we want this to happen as soon as our `List` is shown &rarr; add `.onAppear(perform: loadData)` modifier to list
+- inside `loadData()` we have four steps we need to complete:
+    1. Create the URL we want to read.
+    2. Wrapping it into a `URLRequest` &rarr; allows us to configure how the URL should be accessed.
+    3. Create and start a networking task from that URL request.
+    4. Handle the result.
+```Swift
+func loadData() {
+    guard let url = URL(string: "https://itunes.apple.com/search?term=taylor+swift&entity=song") else {
+        print("Invalid URL")
+        return
+    }
+    let request = URLRequest(url: url)
+    URLSession.shared.dataTask(with: request) { data, response, error in
+        if let data = data {
+            if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
+                // there is good data -> go back to main thread
+                DispatchQueue.main.async {
+                    self.results = decodedResponse.results
+                }
+                
+                return
+            }
+        }
+        
+        print("Fetch failed: \(error?.localizedDescription ?? "Unknown error")")
+    }.resume()
+}
+```

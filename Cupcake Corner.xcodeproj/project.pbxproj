@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		301CB4E325C827C600F964C8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301CB4E225C827C600F964C8 /* User.swift */; };
+		30C6545025C83D2A007F1039 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6544F25C83D2A007F1039 /* Response.swift */; };
+		30C6545325C83D43007F1039 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C6545225C83D43007F1039 /* Result.swift */; };
 		30EE935325C70D870010BBF9 /* Cupcake_CornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE935225C70D870010BBF9 /* Cupcake_CornerApp.swift */; };
 		30EE935525C70D870010BBF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EE935425C70D870010BBF9 /* ContentView.swift */; };
 		30EE935725C70D880010BBF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30EE935625C70D880010BBF9 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 
 /* Begin PBXFileReference section */
 		301CB4E225C827C600F964C8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		30C6544F25C83D2A007F1039 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		30C6545225C83D43007F1039 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		30EE934F25C70D870010BBF9 /* Cupcake Corner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cupcake Corner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30EE935225C70D870010BBF9 /* Cupcake_CornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cupcake_CornerApp.swift; sourceTree = "<group>"; };
 		30EE935425C70D870010BBF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,10 +64,12 @@
 			children = (
 				30EE935225C70D870010BBF9 /* Cupcake_CornerApp.swift */,
 				30EE935425C70D870010BBF9 /* ContentView.swift */,
+				301CB4E225C827C600F964C8 /* User.swift */,
+				30C6544F25C83D2A007F1039 /* Response.swift */,
+				30C6545225C83D43007F1039 /* Result.swift */,
 				30EE935625C70D880010BBF9 /* Assets.xcassets */,
 				30EE935B25C70D880010BBF9 /* Info.plist */,
 				30EE935825C70D880010BBF9 /* Preview Content */,
-				301CB4E225C827C600F964C8 /* User.swift */,
 			);
 			path = "Cupcake Corner";
 			sourceTree = "<group>";
@@ -145,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30C6545025C83D2A007F1039 /* Response.swift in Sources */,
+				30C6545325C83D43007F1039 /* Result.swift in Sources */,
 				30EE935525C70D870010BBF9 /* ContentView.swift in Sources */,
 				30EE935325C70D870010BBF9 /* Cupcake_CornerApp.swift in Sources */,
 				301CB4E325C827C600F964C8 /* User.swift in Sources */,
