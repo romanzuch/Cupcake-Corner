@@ -132,3 +132,68 @@ func loadData() {
     }.resume()
 }
 ```
+
+## Validating and disabling forms
+
+- SwiftUI's `Form` view lets us store user input &rarr; fast and convenient way
+- there is a modifier `disabled()` that allows us to check if the input is valid
+```Swift
+struct ContentView: View {
+    @State private var username = ""
+    @State private var email = ""
+    
+    var body: some View {
+        Form {
+            Section {
+                TextField("Username", text: $username)
+                TextField("Email", text: $email)
+            }
+            Section {
+                Button("Create account") {
+                    print("Creating account...")
+                }
+            }
+            .disabled(username.isEmpty || email.isEmpty)
+        }   
+    }
+}
+```
+
+## Taking basic order details
+
+- at first we will create an ordering screen that takes basic details of an order &rarr; how many cupcakes, what kind, and whether there are any special customizations
+    - before creating the UI, we start by defining the data model &rarr; before we used `@State` for simple values and `@ObservedObject` for reference types
+    - here we're going to have a single class that stores all our data &rarr; this will be passed from screen to screen (all screens have the same data)
+- for this class we need the following: 
+    - types of cakes, plus a static array of all possible options
+    - how many cupcakes the user wants to order
+    - whether the user wants to make special requests
+    - whether the user wants extra frosting
+    - whether the user wants to add spinkles on their cakes
+- all of those properties need to update the UI when changed &rarr; mark them with `@Published` and make the whole class conform to `ObservableObject`
+```Swift
+class Order: ObservableObject {
+    static let classics = ["Rum Raisin Walnut",
+                           "Lemon Poppyseed",
+                           "White Choc & Strawberries",
+                           "Cinnamon Sugar",
+                           "Pink Sprinkles",
+                           "Caramel Hazelnut"]
+//    static let specials = ["Choch Caramel Marshmallow",
+//                           "Sachertorte",
+//                           "Orange Almond Fudge",
+//                           "Chocolate Peanut Fudge",
+//                           "Chocolate Hazelnut Filled",
+//                           "Cookie Dough",
+//                           "Boston Cream"]
+    
+    @Published var type = 0
+    @Published var quantity = 3
+    
+    @Published var specialRequestEnabled = false
+    
+}
+```
+- we're going to build the UI in three sections
+    1. cupcake type and quantity
+    
