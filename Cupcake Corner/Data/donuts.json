@@ -1,0 +1,93 @@
+[
+	{
+		"id": "rum_raisin_walnut",
+		"name": "Rum Raisin Walnut",
+		"pricing": 2.75,
+		"type": "classic",
+		"description": "Donut mit einer Glasur aus in Rum getränkten Rosinen, dekoriert mit getoasteten Walnussstückchen. Enthält Weizengluten, Alkohol und Walnüsse."
+	},
+	{
+		"id": "lemon_poppyseed",
+		"name": "Lemon Poppyseed",
+		"pricing": 2.75,
+		"type": "classic",
+		"description": "Donut mit Zitronenglasur aus Zitronensaft, Zitronenabrieb und Mohn. Enthält Gluten."
+	},
+	{
+		"id": "white_choc_strawberries",
+		"name": "White Choc & Strawberries",
+		"pricing": 2.75,
+		"type": "classic",
+		"description": "Donut mit weißer Schokoglasur, dekoriert mit gefriergetrockneten Erdbeeren in Bio-Qualität. Enthält Gluten und Mandeln."
+	},
+	{
+		"id": "cinnamon_sugar",
+		"name": "Cinnamon Sugar",
+		"pricing": 2.75,
+		"type": "classic",
+		"description": "Klassischer Donut gewälzt in einer Zimt und Zucker Mischung. Enthält Gluten."
+	},
+	{
+		"id": "pink_sprinkles",
+		"name": "Pink Sprinkles",
+		"pricing": 2.75,
+		"type": "classic",
+		"description": "Donut mit pinker Hibiskusglasur, dekoriert mit natürlich gefärbten Zuckerstreuseln. Enthält Gluten."
+	},
+	{
+		"id": "caramel_hazelnut",
+		"name": "Caramel Hazelnut",
+		"pricing": 2.75,
+		"type": "classic",
+		"description": "Donut mit salziger Karamellglasur, dekoriert mit gerösteten Haselnussstückchen. Enthält Gluten und Haselnüsse."
+	},
+	{
+		"id": "choc_caramel_marshmallow",
+		"name": "Choc Caramel Marshmallow",
+		"pricing": 3.25,
+		"type": "special",
+		"description": "Donut mit Schokopuddingfüllung und salziger Karamellglasur, dekoriert mit noch mehr Schokolade und zwei veganen Marshmallows. Enthält Weizengluten."
+	},
+	{
+		"id": "sachertorte",
+		"name": "Sachertorte",
+		"pricing": 3.25,
+		"type": "special",
+		"description": "Donut mit hausgemachter Aprikosenfüllung, glasiert mit unserer fairen Schokoganache in Bioqualität, dekoriert mit Brownie Crumble. Enthält Weizengluten."
+	},
+	{
+		"id": "orange_almond_fudge",
+		"name": "Orange Almond Fudge",
+		"pricing": 3.25,
+		"type": "special",
+		"description": "Donut mit Orangenglasur, bedeckt mit gerösteten Mandelstiften, Orangensahne und Mandel Fudge Stückchen. Enthält Weizengluten und Mandeln."
+	},
+	{
+		"id": "chocolate_peanut_fudge",
+		"name": "Chocolate Peanut Fudge",
+		"pricing": 3.25,
+		"type": "special",
+		"description": "Donut glasiert mit bio und fairer Schokoganache, dekoriert mit salziger Karamellglasur und Erdnussbutterfudge. Wir verwenden regional hergestellte Bio Erdnussbutter von twisted nut. Enthält Gluten und Erdnüsse."
+	},
+	{
+		"id": "chocolate_hazelnut_filled",
+		"name": "Chocolate Hazelnut Filled",
+		"pricing": 3.25,
+		"type": "special",
+		"description": "Donut mit Schokopuddingfüllung und salziger Karamellglasur, dekoriert mit noch mehr Schokolade und zwei veganen Marshmallows. Enthält Weizengluten."
+	},
+	{
+		"id": "cookie_dough",
+		"name": "Cookie Dough",
+		"pricing": 3.25,
+		"type": "special",
+		"description": "Donut mit Vanilleglasur, dekoriert mit einem Scoop hausgemachtem Cookie Dough und Schokodrizzle. Enthält Gluten."
+	},
+	{
+		"id": "boston_cream",
+		"name": "Bostom Cream",
+		"pricing": 3.25,
+		"type": "special",
+		"description": "Donut gefüllt mit hausgemachtem Vanillepudding, glasiert in fairer Schokoganache in Bioqualität. Enthält Gluten."
+	}
+]
